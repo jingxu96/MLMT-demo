@@ -29,11 +29,12 @@ audio {
     <img src="overall.jpg" width=1200/>
     <li>Fig. 1. The architecture of MLMT system. Figure (a) shows the pipeline of implementing ASR task. Figure (b) shows the pipeline of implementing TTS task. Note that all parameters of adapter and LLM are the same implementing different tasks.</li>
     <h3>Data constrcution strategy</h3>
-    <img src="data_example.jpg" width=1200 />
+    <img src="data_example.jpg" width=600 />
     <li>Fig. 2. The procedure of constructing CS data.</li>
 
   <hr>
   <h2> System Comparison</h2>
+  <li>GT: Ground truth speech</li>
   <li>SpeechGPT: Open-sourced SpeechGPT (stage-2)</li>
   <li>Initial HuBERT: A model trained with initial mHubert tokens using LLaMA 3 backbone </li>
   <li>VALL-E-X: Open-sourced VALLE-X implementation with 704 hours English data and 598 hours Mandarin data</li>
@@ -47,6 +48,7 @@ audio {
     <tr>
       <td>No.</td>
       <td>Transcript</td>
+      <td>GT </td>
       <td>SpeechGPT </td>
       <td>Initial Hubert</td>
       <td>VALL-E-X</td>
@@ -59,6 +61,11 @@ audio {
     <tr>
       <td>1</td>
       <td>Stuff it into you his belly counselled him</td>
+      <td>
+        <audio controls>
+        <source src="./eng/GT/1.wav" type="audio/wav">
+        </audio>
+      </td>
       <td>
         <audio controls>
         <source src="./eng/speechgpt/answer_1.wav" type="audio/wav">
@@ -100,6 +107,11 @@ audio {
       <td>He tried to think how it could be</td>
       <td>
         <audio controls>
+        <source src="./eng/GT/14.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./eng/speechgpt/answer_14.wav" type="audio/wav">
         </audio>
       </td>
@@ -137,6 +149,11 @@ audio {
     <tr>
       <td>3</td>
       <td>Be ware of making that mistake</td>
+      <td>
+        <audio controls>
+        <source src="./eng/GT/30.wav" type="audio/wav">
+        </audio>
+      </td>
       <td>
         <audio controls>
         <source src="./eng/speechgpt/answer_30.wav" type="audio/wav">
@@ -178,6 +195,11 @@ audio {
       <td>He had the faith in him that moves mountains</td>
       <td>
         <audio controls>
+        <source src="./eng/GT/35.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./eng/speechgpt/answer_35.wav" type="audio/wav">
         </audio>
       </td>
@@ -217,6 +239,11 @@ audio {
       <td>He could wait no longer</td>
       <td>
         <audio controls>
+        <source src="./eng/GT/38.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./eng/speechgpt/answer_38.wav" type="audio/wav">
         </audio>
       </td>
@@ -254,6 +281,11 @@ audio {
     <tr>
       <td>6</td>
       <td>She sent me the pages in question before she died</td>
+      <td>
+        <audio controls>
+        <source src="./eng/GT/144.wav" type="audio/wav">
+        </audio>
+      </td>
      <td>
         <audio controls>
         <source src="./eng/speechgpt/answer_144.wav" type="audio/wav">
@@ -295,6 +327,11 @@ audio {
       <td>Probably not till the second post</td>
       <td>
         <audio controls>
+        <source src="./eng/GT/150.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./eng/speechgpt/answer_150.wav" type="audio/wav">
         </audio>
       </td>
@@ -334,6 +371,11 @@ audio {
       <td>Cried the ladies whose departure had been fixed</td>
       <td>
         <audio controls>
+        <source src="./eng/GT/152.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./eng/speechgpt/answer_152.wav" type="audio/wav">
         </audio>
       </td>
@@ -370,6 +412,11 @@ audio {
     </tr>
     <td>9</td>
       <td>It was the beauty of it</td>
+    <td>
+        <audio controls>
+        <source src="./eng/GT/167.wav" type="audio/wav">
+        </audio>
+      </td>
       <td>
         <audio controls>
         <source src="./eng/speechgpt/answer_167.wav" type="audio/wav">
@@ -408,6 +455,11 @@ audio {
     </tr>
     <td>10</td>
       <td>If spoken to, she would not speak again</td>
+    <td>
+        <audio controls>
+        <source src="./eng/GT/186.wav" type="audio/wav">
+        </audio>
+      </td>
       <td>
         <audio controls>
         <source src="./eng/speechgpt/answer_186.wav" type="audio/wav">
@@ -453,6 +505,7 @@ audio {
     <tr>
       <td>No.</td>
       <td>Transcript</td>
+      <td>GT</td>
       <td>VALL-E-X</td>
       <td>MLMT_no500</td>
       <td>MLMT_mixed500</td>
@@ -463,6 +516,11 @@ audio {
     <tr>
       <td>1</td>
       <td>把她推进去</td>
+      <td>
+        <audio controls>
+        <source src="./zh/GT/10.wav" type="audio/wav">
+        </audio>
+      </td>
       <td>
         <audio controls>
         <source src="./zh/vallex/10_pred.wav" type="audio/wav">
@@ -494,6 +552,11 @@ audio {
       <td>你那几句话</td>
       <td>
         <audio controls>
+        <source src="./zh/GT/18.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./zh/vallex/18_pred.wav" type="audio/wav">
         </audio>
       </td>
@@ -521,7 +584,12 @@ audio {
     <tr>
       <td>3</td>
       <td>简单但非常有效</td>
-            <td>
+      <td>
+        <audio controls>
+        <source src="./zh/GT/21.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
         <audio controls>
         <source src="./zh/vallex/21_pred.wav" type="audio/wav">
         </audio>
@@ -552,6 +620,11 @@ audio {
       <td>我帮你问问从那怎么到我家</td>
       <td>
         <audio controls>
+        <source src="./zh/GT/33.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./zh/vallex/33_pred.wav" type="audio/wav">
         </audio>
       </td>
@@ -579,7 +652,12 @@ audio {
     <tr>
       <td>5</td>
       <td>你想要的不是钱</td>
-            <td>
+      <td>
+        <audio controls>
+        <source src="./zh/GT/36.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
         <audio controls>
         <source src="./zh/vallex/36_pred.wav" type="audio/wav">
         </audio>
@@ -608,7 +686,12 @@ audio {
     <tr>
       <td>6</td>
       <td>实际上这些画不是我的</td>
-            <td>
+      <td>
+        <audio controls>
+        <source src="./zh/GT/4069.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
         <audio controls>
         <source src="./zh/vallex/4069_pred.wav" type="audio/wav">
         </audio>
@@ -637,7 +720,12 @@ audio {
     <tr>
       <td>7</td>
       <td>在东德克萨斯一带活动</td>
-            <td>
+      <td>
+        <audio controls>
+        <source src="./zh/GT/4084.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
         <audio controls>
         <source src="./zh/vallex/4084_pred.wav" type="audio/wav">
         </audio>
@@ -667,6 +755,11 @@ audio {
      <tr>
       <td>8</td>
       <td>好像多年一样</td>
+       <td>
+        <audio controls>
+        <source src="./zh/GT/4099.wav" type="audio/wav">
+        </audio>
+      </td>
       <td>
         <audio controls>
         <source src="./zh/vallex/4099_pred.wav" type="audio/wav">
@@ -699,6 +792,11 @@ audio {
       <td>你说什么我都会信的</td>
       <td>
         <audio controls>
+        <source src="./zh/GT/4109.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
         <source src="./zh/vallex/4109_pred.wav" type="audio/wav">
         </audio>
       </td>
@@ -726,7 +824,12 @@ audio {
     <tr>
       <td>10</td>
       <td>也不了解自己在说什么</td>
-            <td>
+      <td>
+        <audio controls>
+        <source src="./zh/GT/4115.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
         <audio controls>
         <source src="./zh/vallex/4115_pred.wav" type="audio/wav">
         </audio>
