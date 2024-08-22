@@ -23,58 +23,65 @@ audio {
   <h2>Abstract</h2>
   While large language models (LLMs) have been explored in the speech domain for both recognition and generation tasks, their applications are predominantly confined to monolingual scenarios, with limited exploration in multi-lingual and code-switched contexts. Additionally, recognition and synthesis tasks are often handled separately, such as Qwen-Audio and VALL-E. In this paper, we propose a novel approach which integrates multi-lingual speech recognition and generation tasks into one single model. Furthermore, we develop an effective data construction approach which splits and concatenates words from different languages. Experiment results show that this approach not only enhances LLM's performance in multi-lingual speech synthesis and recognition task, but also empowers LLM with code-switched speech synthesis capability with comparable speaker consistency and similarity with any given speaker.
   <hr>  
-  <h2> </h2>
-  <h3> System comparison</h3>
-  <li>Ground Truth: Ground truth speech</li>
-  <li>Mandarin HuBERT: Open-sourced HuBERT trained on 1W+ hours Wenetspeech</li>
-  <li>Unadapted mHuBERT + Untrained K-means: Un-adapted mHuBERT model with released K-means model</li>
-  <li>Unadapted mHuBERT + Trained K-means: Un-adapted mHuBERT model with K-means model trained on extracted Mandarin representations</li>
-  <li>Adapted mHuBERT(one-iteration) + Trained K-means (proposed): Adapted mHuBERT model using one-iteration adaptation strategy with K-means model trained on extracted Mandarin representations</li>
-  <li>Adapted mHuBERT(two-iteration) + Trained K-means (proposed): Adapted mHuBERT model using two-iteration adaptation strategy with K-means model trained on extracted Mandarin representations</li>
+  <h2> System Comparison</h2>
+  <li>SpeechGPT: Open-sourced SpeechGPT</li>
+  <li>Initial HuBERT</li>: A model trained with initial mHubert tokens using LLaMA 3 backbone </li>
+  <li>VALL-E-X: Open-sourced VALLE-X implementation with 704 hours English data and 598 hours Mandarin data</li>
+  <li>MLMT_mixed500: Our proposed model trained with 500 hours Libripseech-960, 500 hours AISHELL-2 and 10 hour constructed CS data</li>
+  <li>MLMT_no500: Our proposed model trained with 500 hours Librispeech-960, 500 hours AISHELL-2</li>
+  <li>MLMT_mixed: Our proposed model trained with 960 hours Libripseech-960, 1000 hours AISHELL-2 and 10 hour constructed CS data</li>
+  <li>MLMT_no: Our proposed model trained with 960 hours Librispeech-960, 1000 hours AISHELL-2</li>
+  <h2>Results on English TTS</h2>
     <!---adaptation performance table -->
   <table border="1">
     <tr>
       <td>No.</td>
       <td>Transcript</td>
-      <td>Ground Truth</td>
-      <td>Mandarin HuBERT</td>
-      <td>Unadapted mHuBERT + Untrained K-means</td>
-      <td>Unadapted mHuBERT + Trained K-means</td>
-      <td>Adaptated mHuBERT(one-iteration)+ Trained K-means</td>
-      <td>Adpated mHuBERT(two-iteration) + Trained K-means</td>
+      <td>SpeechGPT </td>
+      <td>Initial Hubert</td>
+      <td>VALL-E-X</td>
+      <td>MLMT_mixed500</td>
+      <td>MLMT_no500</td>
+      <td>MLMT_mixed</td>
+      <td>MLMT_no</td>
     </tr>
-    <!--each sample of each 6 systems-->
+    <!--each sample of each 8 systems-->
     <tr>
       <td>1</td>
-      <td>武术始终被看作我国的国粹</td>
+      <td>Stuff it into you his belly counselled him</td>
       <td>
         <audio controls>
-        <source src="./adaptation/gt/00_SSB06930002.wav" type="audio/wav">
+        <source src="./eng/speechgpt/answer_1.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/mandarinhubert/0_pred.wav" type="audio/wav">
+        <source src="./eng/initial_hubert/1_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/unadapt+untrain/0_pred.wav" type="audio/wav">
+        <source src="./eng/vallex/1_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/unadapt+train/0_pred.wav" type="audio/wav">
+        <source src="./eng/MLMT_500/1_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter1+1000/0_pred.wav" type="audio/wav">
+        <source src="./eng/MLMT_500no/1_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+1000/0_pred.wav" type="audio/wav">
+        <source src="./eng/MLMT_mixed/1_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./eng/MLMT_no/1_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
