@@ -396,7 +396,7 @@ audio {
         </audio>
       </td>
     </tr>
-          <td>10</td>
+    <td>10</td>
       <td>If spoken to she would not speak again</td>
       <td>
         <audio controls>
@@ -749,492 +749,357 @@ audio {
   </table>
   <hr>
   <h2> Results on CSTTS</h2>
-  The text are randomly sampled from ASRU-2019 Challenge test set, the reference speakers are randomly selected from TIMIT for English and ASCEND for Mandarin respectively.
+  The text are randomly sampled from ASRU-2019 Challenge test set. The text is generated using the speaker from the reference speech. The reference speech are randomly selected from TIMIT (English) and ASCEND (Mandarin).
   <table border="1">
     <tr>
       <td>No.</td>
       <td>Transcript</td>
-      <td>Ground Truth</td>
-      <td>zh-2iter-1000</td>
-      <td>zh-2iter-3000</td>
+      <td>Reference speech</td>
+      <td>VALL-E-X</td>
+      <td>MLMT_no500</td>
+      <td>MLMT_mixed500</td>
+      <td>MLMT_no</td>
+      <td>MLMT_mixed</td>
     </tr>
     <!--each sample of each 6 systems-->
     <tr>
       <td>1</td>
-      <td>武术始终被看作我国的国粹</td>
+      <td>Boy crisis出现真不是没道理的</td>
       <td>
         <audio controls>
-        <source src="./adaptation/gt/00_SSB06930002.wav" type="audio/wav">
+        <source src="./cs/ref/3.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+1000/0_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/3_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+3000/0_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/3_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_500/3_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_no/3_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/3_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
     <tr>
       <td>2</td>
-      <td>新政的推出是一项长远的制度安排</td>
+      <td>工资还剩六百元的话就买riddle joker</td>
       <td>
         <audio controls>
-        <source src="./adaptation/gt/01_SSB06930003.wav" type="audio/wav">
+        <source src="./cs/ref/89.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+1000/1_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/89_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+3000/1_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>其实无论是通过和什么厂商合作</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/02_SSB06930004.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/89_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+1000/2_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500/89_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+3000/2_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>使自己得到更多的实惠</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930007.wav" type="audio/wav">
+        <source src="./cs/MLMT_no/89_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./adaptation/iter2+1000/5_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+3000/5_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>而且对手也大多是中国人</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930014.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+1000/11_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+3000/11_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>不排除内幕交易的可能</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930015.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+1000/12_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+3000/12_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>来一首死了都要爱</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930017.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+1000/14_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+3000/14_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>可以和车主直接进行对话</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930022.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+1000/18_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/iter2+3000/18_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-  </table>
- <h3> System comparison on language preservation and adaptation</h3>
-  We consider the balance between new languages and existed languages in this experiment.
-  <li>GT: Ground truth speech</li>
-  <li>zh-2iter-1000: Adapted mHuBERT model using one-iteration adaptation strategy and re-clustering preservation strategy with K-means model trained on extracted Mandarin representations and cluster number of K-means model is 1000</li>
-  <li>zh-2iter-3000: Adapted mHuBERT model using two-iteration adaptation strategy and re-clustering preservation strategy with K-means model trained on extracted Mandarin representations and cluster number of K-means model is 3000</li>   
-   <table border="1">
-    <tr>
-      <td>No.</td>
-      <td>Transcript</td>
-      <td>GT</td>
-      <td>zh-2iter-1000</td>
-      <td>zh-2iter-3000</td>
-    </tr>
-    <!--each sample of each 6 systems-->
-    <tr>
-      <td>1</td>
-      <td>Ask her to bring these things with her from the store.</td>
-      <td>
-        <audio controls>
-        <source src="./preservation/gt/p226_002.wav" type="audio/wav">
-        </audio>
-      </td>
-
-      <td>
-        <audio controls>
-        <source src="./preservation/after/en/zh+2iter/1_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/1_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>He had no enemies.</td>
-      <td>
-        <audio controls>
-        <source src="./preservation/gt/p226_053.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/en/zh+2iter/50_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/50_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_mixed/89_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
     <tr>
       <td>3</td>
-      <td>She's a spy!</td>
-      <td>
+      <td>一个漂亮的spear成功双肩压地三秒</td>
+            <td>
         <audio controls>
-        <source src="./preservation/gt/p226_059.wav" type="audio/wav">
+        <source src="./cs/ref/203.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter/56_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/203_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/56_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/203_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_500/203_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_no/203_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/203_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
     <tr>
       <td>4</td>
-      <td>It's a real challenge.</td>
-      <td>
+      <td>去每个公寓找它的reception</td>
+            <td>
         <audio controls>
-        <source src="./preservation/gt/p226_063.wav" type="audio/wav">
+        <source src="./cs/ref/342.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter/60_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/342_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/60_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/342_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_500/342_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_no/342_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/342_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
     <tr>
       <td>5</td>
-      <td>Art is extra.</td>
+      <td>awkward moment在商场遇到以前的学生</td>
       <td>
         <audio controls>
-        <source src="./preservation/gt/p226_066.wav" type="audio/wav">
+        <source src="./cs/ref/558.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter/63_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/558_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/63_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/558_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_500/558_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_no/558_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/558_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
     <tr>
       <td>6</td>
-      <td>I've spent a lot of time on buses.</td>
+      <td>你不会连airmail都私吞吧</td>
       <td>
         <audio controls>
-        <source src="./preservation/gt/p226_069.wav" type="audio/wav">
+        <source src="./cs/ref/646.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter/66_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/646_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/66_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/646_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_500/646_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_no/646_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/646_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
     <tr>
       <td>7</td>
-      <td>Painful, but only because it's true.</td>
+      <td>修改的patch都亲自写好了</td>
       <td>
         <audio controls>
-        <source src="./preservation/gt/p226_075.wav" type="audio/wav">
+        <source src="./cs/ref/666.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter/72_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/666_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/72_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/666_pred.wav" type="audio/wav">
         </audio>
-      </td>     
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_500/666_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_no/666_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/666_pred.wav" type="audio/wav">
+        </audio>
+      </td>
     </tr>
-     <tr>
+    <tr>
       <td>8</td>
-      <td>He seems to be pleased with the picture.</td>
-      <td>
+      <td>Lily送我的tulip种子总算开了一朵花</td>
+            <td>
         <audio controls>
-        <source src="./preservation/gt/p226_089.wav" type="audio/wav">
+        <source src="./cs/ref/728.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter/84_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/728_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/en/zh+2iter+3000/84_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>武术始终被看作我国的国粹</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/00_SSB06930002.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/728_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/0_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500/728_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/0_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_no/728_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/728_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
-    <tr>
-      <td>10</td>
-      <td>新政的推出是一项长远的制度安排</td>
+    <td>9/td>
+      <td>目击者都很shaken了话筒还戳人家脸前</td>
       <td>
         <audio controls>
-        <source src="./adaptation/gt/01_SSB06930003.wav" type="audio/wav">
+        <source src="./cs/ref/3.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/1_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/15_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/1_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>其实无论是通过和什么厂商合作</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/02_SSB06930004.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/15_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/2_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500/15_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/2_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_no/15_pred.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="./cs/MLMT_mixed/15_pred.wav" type="audio/wav">
         </audio>
       </td>
     </tr>
-    <tr>
-      <td>12</td>
-      <td>使自己得到更多的实惠</td>
+    <td>10</td>
+      <td>除非你是superman穿在外面</td>
       <td>
         <audio controls>
-        <source src="./adaptation/gt/SSB06930007.wav" type="audio/wav">
+        <source src="./cs/ref/790.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/5_pred.wav" type="audio/wav">
+        <source src="./cs/vallex/790_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/5_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>而且对手也大多是中国人</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930014.wav" type="audio/wav">
+        <source src="./cs/MLMT_500no/790_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/11_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_500/790_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/11_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>不排除内幕交易的可能</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930015.wav" type="audio/wav">
+        <source src="./cs/MLMT_no/790_pred.wav" type="audio/wav">
         </audio>
       </td>
       <td>
         <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/12_pred.wav" type="audio/wav">
+        <source src="./cs/MLMT_mixed/790_pred.wav" type="audio/wav">
         </audio>
       </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/12_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>来一首死了都要爱</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930017.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/14_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/14_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>可以和车主直接进行对话</td>
-      <td>
-        <audio controls>
-        <source src="./adaptation/gt/SSB06930022.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/zh/zh+iter2/18_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-        <source src="./preservation/after/zh/zh+iter2+3000/18_pred.wav" type="audio/wav">
-        </audio>
-      </td>
-      
     </tr>
   </table>
-
-
 </body>
 </html>
