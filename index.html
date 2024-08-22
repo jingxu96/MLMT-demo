@@ -23,6 +23,16 @@ audio {
   <h2>Abstract</h2>
   While large language models (LLMs) have been explored in the speech domain for both recognition and generation tasks, their applications are predominantly confined to monolingual scenarios, with limited exploration in multi-lingual and code-switched contexts. Additionally, recognition and synthesis tasks are often handled separately, such as Qwen-Audio and VALL-E. In this paper, we propose a novel approach which integrates multi-lingual speech recognition and generation tasks into one single model. Furthermore, we develop an effective data construction approach which splits and concatenates words from different languages. Experiment results show that this approach not only enhances LLM's performance in multi-lingual speech synthesis and recognition task, but also empowers LLM with code-switched speech synthesis capability with comparable speaker consistency and similarity with any given speaker.
   <hr>  
+  <hr>
+    <h2>Methodology</h2>
+    <h3>Model Architecture</h3>
+    <img src="unit-dsr6.jpg" width="1200" height="600" />
+    <li>Fig. 1. The architecture of MLMT system.</li>
+    <h3>Data constrcution strategy</h3>
+    <img src="unit-dsr6.jpg" width="1200" height="600" />
+    <li>Fig. 2. The procedure of constructing CS data.</li>
+
+  <hr>
   <h2> System Comparison</h2>
   <li>SpeechGPT: Open-sourced SpeechGPT (stage-2)</li>
   <li>Initial HuBERT: A model trained with initial mHubert tokens using LLaMA 3 backbone </li>
