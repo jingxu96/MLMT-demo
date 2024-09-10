@@ -16,12 +16,12 @@ audio {
 </style>
 </head>
 <body>
-  <h1>Enhancing Speech Recognition and Generation in LLMs with Constructed Code-switched Data</h1>
+  <h1>Enhancing Speech Generation and Recognition in LLMs with Constructed Code-switched Data</h1>
     
   <hr>
 
   <h2>Abstract</h2>
-  While large language models (LLMs) have been explored in the speech domain for both recognition and generation tasks, their applications are predominantly confined to monolingual scenarios, with limited exploration in multi-lingual and code-switched contexts. Additionally, recognition and synthesis tasks are often handled separately, such as Qwen-Audio and VALL-E. In this paper, we propose a novel approach which integrates multi-lingual speech recognition and generation tasks into one single model. Furthermore, we develop an effective data construction approach which splits and concatenates words from different languages. Experiment results show that this approach not only enhances LLM's performance in multi-lingual speech synthesis and recognition task, but also empowers LLM with code-switched speech synthesis capability with comparable speaker consistency and similarity with any given speaker.
+ While large language models (LLMs) have been explored in the speech domain for both generation and recognition tasks, their applications are predominantly confined to monolingual scenarios, with limited exploration in multilingual and code-switched (CS) contexts. Additionally, generation and recognition tasks are often handled separately, such as VALL-E and Qwen-Audio. In this paper, we propose a novel model which integrates multilingual speech generation and recognition tasks within one single LLM. Furthermore, we develop an effective data construction approach that splits and concatenates words from different languages to equip LLMs with CS synthesis ability without relying on CS data. The experimental results demonstrate that our model outperforms other baselines with a comparable data scale. Furthermore, our data construction approach not only equips LLMs with CS speech synthesis capability with comparable speaker consistency and similarity to any given speaker, but also improves LLM performance in the multilingual speech generation and recognition task
   <hr>  
   <hr>
     <h2>Methodology</h2>
