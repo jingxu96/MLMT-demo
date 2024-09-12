@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Enhancing Speech Generation and Recognition in LLMs with Constructed Code-switched Data</title>
+  <title>Enhancing Multilingual Speech Generation and Recognition Abilities in LLMs with Constructed Code-switched Data</title>
   <style>
 body {
   font-size: 20px;
@@ -16,18 +16,18 @@ audio {
 </style>
 </head>
 <body>
-  <h1>Enhancing Speech Generation and Recognition in LLMs with Constructed Code-switched Data</h1>
+  <h1>Enhancing Multilingual Speech Generation and Recognition Abilities in LLMs with Constructed Code-switched Data</h1>
     
   <hr>
 
   <h2>Abstract</h2>
- While large language models (LLMs) have been explored in the speech domain for both generation and recognition tasks, their applications are predominantly confined to monolingual scenarios, with limited exploration in multilingual and code-switched (CS) contexts. Additionally, generation and recognition tasks are often handled separately, such as VALL-E and Qwen-Audio. In this paper, we propose a novel model which integrates multilingual speech generation and recognition tasks within one single LLM. Furthermore, we develop an effective data construction approach that splits and concatenates words from different languages to equip LLMs with CS synthesis ability without relying on CS data. The experimental results demonstrate that our model outperforms other baselines with a comparable data scale. Furthermore, our data construction approach not only equips LLMs with CS speech synthesis capability with comparable speaker consistency and similarity to any given speaker, but also improves LLM performance in the multilingual speech generation and recognition task
+ While large language models (LLMs) have been explored in the speech domain for both generation and recognition tasks, their applications are predominantly confined to monolingual scenarios, with limited exploration in multilingual and code-switched (CS) contexts. Additionally, generation and recognition tasks are often handled separately, such as VALL-E and Qwen-Audio.  In this paper, we present UPGRADE (a unified multilingual speech generation and recognition LLM), integrating multilingual speech generation and recognition tasks within the single LLM. Furthermore, we develop an effective data construction approach that splits and concatenates words from different languages to equip LLMs with CS synthesis ability without relying on CS data. The experimental results demonstrate that our model outperforms other baselines with a comparable data scale. Furthermore, our data construction approach not only equips LLMs with CS speech synthesis capability with comparable speaker consistency and similarity to any given speaker, but also improves LLMs' performance in the multilingual speech generation and recognition task.
   <hr>  
   <hr>
     <h2>Methodology</h2>
     <h3>Model Architecture</h3>
     <img src="overall.jpg" width=1200/>
-    <li>Fig. 1. The architecture of MLMT system. Figure (a) shows the pipeline of implementing ASR task. Figure (b) shows the pipeline of implementing TTS task. Note that all parameters of adapter and LLM are the same implementing different tasks.</li>
+    <li>Fig. 1. The architecture of UPGRADE system. Figure (a) shows the pipeline of implementing ASR task. Figure (b) shows the pipeline of implementing TTS task. Note that all parameters of adapter and LLM are the same implementing different tasks.</li>
     <h3>Data constrcution strategy</h3>
     <img src="data_example.jpg" width=600 />
     <li>Fig. 2. The procedure of constructing CS data.</li>
@@ -38,10 +38,10 @@ audio {
   <li>SpeechGPT: Open-sourced SpeechGPT (stage-2)</li>
   <li>Initial HuBERT: A model trained with initial mHubert tokens using LLaMA 3 backbone </li>
   <li>VALL-E-X: Open-sourced VALLE-X implementation with 704 hours English data and 598 hours Mandarin data</li>
-  <li>MLMT_mixed500: Our proposed model trained with 500 hours Libripseech-960, 500 hours AISHELL-2 and 10 hour constructed CS data</li>
-  <li>MLMT_no500: Our proposed model trained with 500 hours Librispeech-960, 500 hours AISHELL-2</li>
-  <li>MLMT_mixed: Our proposed model trained with 960 hours Libripseech-960, 1000 hours AISHELL-2 and 10 hour constructed CS data</li>
-  <li>MLMT_no: Our proposed model trained with 960 hours Librispeech-960, 1000 hours AISHELL-2</li>
+  <li>UPGRADE_mixed500: Our proposed model trained with 500 hours Libripseech-960, 500 hours AISHELL-2 and 10 hour constructed CS data</li>
+  <li>UPGRADE_no500: Our proposed model trained with 500 hours Librispeech-960, 500 hours AISHELL-2</li>
+  <li>UPGRADE</li>_mixed: Our proposed model trained with 960 hours Libripseech-960, 1000 hours AISHELL-2 and 10 hour constructed CS data</li>
+  <li>UPGRADE_no: Our proposed model trained with 960 hours Librispeech-960, 1000 hours AISHELL-2</li>
   <h2>Results on English TTS</h2>
     <!---adaptation performance table -->
   <table border="1">
@@ -52,10 +52,10 @@ audio {
       <td>SpeechGPT </td>
       <td>Initial Hubert</td>
       <td>VALL-E-X</td>
-      <td>MLMT_no500</td>
-      <td>MLMT_mixed500</td>
-      <td>MLMT_no</td>
-      <td>MLMT_mixed</td>
+      <td>UPGRADE_no500</td>
+      <td>UPGRADE_mixed500</td>
+      <td>UPGRADE_no</td>
+      <td>UPGRADE_mixed</td>
     </tr>
     <!--each sample of each 8 systems-->
     <tr>
@@ -507,10 +507,10 @@ audio {
       <td>Transcript</td>
       <td>GT</td>
       <td>VALL-E-X</td>
-      <td>MLMT_no500</td>
-      <td>MLMT_mixed500</td>
-      <td>MLMT_no</td>
-      <td>MLMT_mixed</td>
+      <td>UPGRADE_no500</td>
+      <td>UPGRADE_mixed500</td>
+      <td>UPGRADE_no</td>
+      <td>UPGRADE_mixed</td>
     </tr>
     <!--each sample of each 6 systems-->
     <tr>
@@ -866,10 +866,10 @@ audio {
       <td>Transcript</td>
       <td>Reference speech</td>
       <td>VALL-E-X</td>
-      <td>MLMT_no500</td>
-      <td>MLMT_mixed500</td>
-      <td>MLMT_no</td>
-      <td>MLMT_mixed</td>
+      <td>UPGRADE_no500</td>
+      <td>UPGRADE_mixed500</td>
+      <td>UPGRADE_no</td>
+      <td>UPGRADE_mixed</td>
     </tr>
     <!--each sample of each 6 systems-->
     <tr>
